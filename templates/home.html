@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+
+</head>
+<body>
+{% extends "index.html" %}
+{% block content %}
+<div class="container-fluid" id="container_charts">
+  <div class="row " id="first_row">
+
+     <!-- Time Chart -->
+          <div class="col-sm-2" id = "select">
+        <div class="chart-wrapper" data-step="1" data-intro="Select Name Of Painting" style="font-weight: normal;  data-position="right">
+          <div class="chart-title">
+            Select Painting(Name):
+          </div>
+          <div class="chart-stage">
+            <div id="menu-select"></div>
+          </div>
+        </div>
+
+    </div>
+     <div class="col-sm-8 col-centered" id="Bar_C">
+            <div class="chart-wrapper" data-step="2" data-intro="Bar Chart With Type Of Drawing" style="font-weight: normal" data-position="right" >
+              <div class="chart-title">
+                Type of Drawing
+              </div>
+              <div class="chart-stage">
+                <div id="bar_chart"></div>
+              </div>
+            </div>
+          </div>
+
+      <div class="col-sm-2" id="total_selector">
+        <div class="chart-wrapper" data-step="3" data-intro="Total Number Of Paintings" style="font-weight: normal" data-position="right" >
+          <div class="chart-title">
+            Total Number of Paintings
+          </div>
+          <div class="chart-stage" id ="total_css" style="background:#CA3B67 ;
+            position: relative;
+            height:60px;
+            font-size: 29px;
+            color: white;
+            padding-top:10px;
+            text-align: center;">
+            <div id="total"></div>
+          </div>
+        </div>
+      </div>
+  </div>
+</div>
+  <div class = "container">
+
+      <div class="row" id="second_row" >
+    <div class="col-sm-4">
+
+        <div class="chart-wrapper" data-step="4" data-intro="Which Base Was Used For Draw" style="font-weight: normal" data-position="right" >
+          <div class="chart-title">
+            Base Of Drawing
+          </div>
+          <div class="chart-stage">
+            <div id="row_chart2"></div>
+          </div>
+        </div>
+      </div>
+
+
+    <div class="col-sm-4">
+            <div class="chart-wrapper" data-step="5" data-intro="Select The Year" style="font-weight: normal" data-position="right" >
+              <div class="chart-title">
+                Select Year
+              </div>
+              <div class="chart-stage">
+                <div id="pie_chart"></div>
+              </div>
+            </div>
+          </div>
+
+     <div class="col-sm-4">
+       <div class="chart-wrapper" data-step="6" data-intro="Which Equipment Was Used" style="font-weight: normal" data-position="right">
+              <div class="chart-title">
+                Equipment Used
+              </div>
+              <div class="chart-stage">
+                <div id="row_chart"></div>
+              </div>
+            </div>
+          </div>
+          </div>
+  </div>
+    <hr>
+
+    <div id = "title_list">
+    <h1>List</h1>
+    </div>
+
+    <div class="container"  id="third_row" >
+    <div class="row align-items-center">
+        <div class="col-sm-3" >
+        <div class="chart-wrapper" data-step="7" data-intro="Filter For List(Select Equipment) " style="font-weight: normal" data-position="right">
+          <div class="chart-title">
+            Equipment Used
+          </div>
+          <div class="chart-stage">
+            <div id="menu-select-equipment"></div>
+          </div>
+        </div>
+        </div>
+         <div class="col-sm-3">
+        <div class="chart-wrapper" data-step="8" data-intro="Filter For List(Base)" style="font-weight: normal" data-position="right">
+          <div class="chart-title">
+            Base of drawing
+          </div>
+          <div class="chart-stage">
+            <div id="menu-select-base"></div>
+          </div>
+        </div>
+        </div>
+         <div class="col-sm-3">
+        <div class="chart-wrapper" data-step="9" data-intro="Filter For List(Select Year)" style="font-weight: normal" data-position="right">
+          <div class="chart-title">
+            Select Year
+          </div>
+          <div class="chart-stage">
+            <div id="menu-select-year"></div>
+          </div>
+        </div>
+        </div>
+
+
+    </div>
+    </div>
+
+
+
+
+
+ <div id="table" class="col-sm-12">
+            <!-- <div class="chart-wrapper" data-step="2" data-intro=" The description that you want" data-position="right"> -->
+                <div class="chart-wrapper" data-step="10" data-intro="The description that you want" style="font-weight: normal" data-position="right">
+                    <div class="chart-stage">
+                        <div style="clear:both">
+                            <table id="table_data" class="table table-hover">
+                                <thead>
+                                    <tr class="header">
+                                        <th><span>Date</span></th>
+                                        <th><span>Title</span></th>
+                                        <th><span>Type Of Drawing</span></th>
+                                        <th><span>Equipments Used</span></th>
+                                        <th><span>Base Of Drawing</span></th>
+
+
+                                    </tr>
+                                </thead>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+
+    </div>
+    </div>
+    </div>
+{% endblock %}
+
+
+
+</body>
+</html>

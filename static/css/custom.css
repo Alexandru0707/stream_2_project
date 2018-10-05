@@ -1,0 +1,283 @@
+
+/*..........NAVBAR..........*/
+
+.navbar-brand>span{
+  font-weight:900;
+}
+
+.navbar{
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+
+/*.........CHART...........*/
+
+.chart-title{
+  font-family: 'Arvo', serif;
+  font-size:20px;
+}
+
+
+
+.chart-title:first-letter{
+  color:red;
+  font-size:20px;
+}
+
+.dc-table-group{
+  background-color:#f2f2f2;
+  font-size:17px;
+}
+
+div.dc-chart {
+  float: none;
+}
+
+.chart-wrapper{
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.dc-chart .axis text{
+  font:16px sans-serif;
+}
+
+.dc-select-menu {
+  background:#CA3B67;
+  width:160px;
+  border: none;
+  position: relative;
+  height: 50px;
+  font-size: 15px;
+  color: white;
+  vertical-align: middle;
+  text-align: center;
+  padding-bottom: 0px;
+}
+.y-axis-label.y-label{
+  transform: translate(30px, 150px) rotate(-90deg);
+  text-anchor: middle;
+  font-size:19px;
+}
+g.axis.x{
+  font-family: 'Arvo', serif;
+}
+
+.dc-chart g.row text {
+  fill: black;
+  font-size:15px;
+
+}
+
+
+/*..........INTRO..TOUR........*/
+
+.introjs-tooltiptext{
+  text-align:center;
+}
+
+.introjs-tooltipbuttons{
+  text-align:center;
+}
+
+
+/*.........OTHERS.........*/
+
+#row-selection {
+  font-weight: 300;
+  font-size: 14px;
+  color: #fff;
+}
+
+hr{
+  position:relative;
+  top:40px;
+}
+
+/*.....TOTAL SELECTOR......*/
+
+#total{
+  text-align:center;
+}
+#total_selector{
+  text-align:center;
+}
+
+/*.........BOOTSTRAP COL...........*/
+
+.col-sm-3{
+  width:20%;
+  margin-left:2px;
+  margin-top:5px;
+}
+
+.col-sm-3{
+  width:33%;
+}
+
+.col-centered {
+  text-align: center;
+}
+
+
+
+/*..........LIST..........*/
+
+#title_list{
+   text-align:center;
+   position:relative;
+   top:80px;
+   background-color:white;
+   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+   font-family: 'Arvo', serif;
+}
+
+#table{
+  margin-top:30px;
+  position:relative;
+  top:100px;
+}
+
+th:first-letter{
+  color:red;
+  font-size:20px;
+}
+
+/*...............CONTAINERS........*/
+
+#list_container{
+  padding-top:80px;
+}
+
+.container{
+   padding-left:0px;
+   padding-right:0px;
+}
+
+/*...........BOOTSTRAP.....ROWS..........*/
+
+#first_row{
+   margin-top:10px;
+}
+
+#second_row{
+   margin-top:10px;
+}
+
+#third_row{
+  width:70%;
+  margin-top:40px;
+  position:relative;
+  top:90px;
+}
+
+/*.........MEDIA QUERIES......*/
+
+@media only screen and (max-width: 1200px) {
+  .dc-select-menu {
+     width:100%;
+     margin-left:5px;
+  }
+}
+@media only screen and (min-width: 1200px) {
+
+ #total_css{
+     padding:12px 80px 12px 80px !important;
+ }
+ #row_chart2{
+     margin-left:37px;
+ }
+ #pie_chart{
+     margin-left:25px;
+ }
+ #row_chart{
+    margin-left:37px
+ }
+ .col-sm-8{
+    width:62%;
+ }
+ #charts_row{
+    margin-left:0px !important;
+ }
+ #first_row{
+    position: relative;
+    left: 28px;
+ }
+}
+
+
+@media only screen and (max-width: 992px) {
+
+ #row_chart2{
+    margin-left:0;
+    right:20px;
+    position:relative;
+    right:30px;
+ }
+ #pie_chart{
+    margin-left:0;
+    position:relative;
+    right:40px;
+ }
+ #row_chart{
+    margin-left:0;
+    position:relative;
+    right:30px;
+ }
+ .col-sm-3{
+     width:30%;
+    margin-left:12px;
+ }
+ .col-sm-8{
+    width:100%;
+ }
+ .col-sm-2{
+    width:100%;
+ }
+}
+
+
+@media only screen and (max-width: 768px) {
+
+ #select{
+    margin-top:50px;
+    width:100%;
+    margin-left:auto;
+    margin-right:auto;
+ }
+ #total_selector{
+    width:100%;
+    margin-left:auto;
+    margin-right:auto;
+ }
+
+ .col-sm-4{
+    width:50%;
+    margin:auto;
+ }
+ .col-sm-3{
+    width:30%;
+    display:inline-block;
+    margin-left:15px;
+ }
+ .div{
+    display:row;
+ }
+ #selector_row{
+    margin:0px;
+    width:100%;
+ }
+    .col-sm-2{
+    width:100%;
+ }
+}
+
+@media only screen and (max-width: 684px) {
+
+   .col-sm-3{
+   margin-left:10px;
+   width:100%;
+   margin:auto;
+ }
+}
+
+
